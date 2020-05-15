@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+body
+{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+section
+{
+	height: 100%;
+	padding: 10px;
+	background: #000;
+}
+section h2
+{
+	text-align: center;
+	font-size: 5.5em;
+	color: #fff;
+}
+h1.Informações
+{
+	text-align: center;
+	color: #fff;
+}
+section h1
+{
+	text-align: center;
+	
+	color: #fff;
+}
+section p
+{
+	padding: 50px;
+	text-align: center;
+	font-size: 1.2em;
+	color: #fff;
+}
+
+section h1.z
+{
+	text-align: center;
+}
+
+img
+{
+   
+}
+
+img.img3d {
+	max-width: 100%;
+	display: block
+}
+
+nav
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 10px 100px;
+	box-sizing: border-box;
+	transform: .5s; 
+}
+nav .logo 
+{
+	float: left;
+}
+nav .logo img
+{
+	height: 75px;
+	transition: .5s;
+	cursor: pointer;
+	text-shadow: 0px 0px 7px #00ffff;
+    text-decoration-color: linear-gradient(to top, #008aff,#00ffe7);
+    animation: animate 35s linear infinite;
+}
+nav ul
+{
+	float: right;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+nav ul li
+{
+	list-style: none;
+}
+
+.content
+{
+	position: absolute;
+	top: 6%;/*joga pro meio em vertical*/
+	left: 40%;/*joga pro meio em horizontal*/
+	transform: translate(-50%, -50%);/*centraliza*/
+	width: 1530px;/*um pouco pro lado enquanto centralizado*/
+	padding: 5px;
+	background: red;/*cria um quadrado da sua preferencia de cor*/
+	box-sizing: border-box;
+	box-shadow: 0 15px 25px rgba(0.0.0,.5);
+	border-radius: 10px;
+	z-index: 2;
+}
+nav ul li a
+{
+	left: 50%;
+	line-height:10%;
+	color: white;
+	padding: 5px 10px;
+	margin: 1px;
+	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+	transition: .5s;
+	text-decoration: none;
+	font-size: 19px
+
+}
+nav ul li a.ative,
+nav ul li a:hover
+{
+	color: black;
+	/*text-decoration: none;*/
+	text-shadow: 0px 0px 7px #00ffff;
+    background: linear-gradient(to top, #008aff,#00ffe7);
+    animation: animate 3s linear infinite;
+    text-decoration: none;
+}
+
+section#Home{
+	/*background: url(imagem/fundo.jpg);
+	width: 100%;
+    height: 100%;
+    top: 60px;
+    padding: 200px;
+    background-size: cover;*/
+}
+section#Informações{
+	
+}
+section#Habilidades{
+	
+}
+section#Hobbies{
+	
+}
+section#Contato{
+	background: url(imagem/fundo.jpg);
+	width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+nav#menu{
+	position: fixed;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	top: 0;
+	left: 0;
+	padding: 20px;
+	width: 100%;
+	height: 82px;
+	background: black;
+	z-index: 1
+}
+nav#menu ul{ 
+	margin: 10px 0
+}
+nav#menu li{
+	display: inline;
+	margin: 20px 30px
+}
+#seta{
+	cursor: pointer;
+	position: fixed;
+	top: 0;
+	right: 35px
+}
+
+.tiltle {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+    font-size: 60px;
+    color: #00ffff;
+    text-shadow: 0px 0px 7px #00ffff;
+    text-decoration-color: linear-gradient(to top, #008aff,#00ffe7);
+    animation: animate 15s linear infinite;
+}
+.tiltleinfo {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+    color: #00ffff;
+    text-shadow: 0px 0px 7px #00ffff;
+    text-decoration-color: linear-gradient(to top, #008aff,#00ffe7);
+    animation: animate 15s linear infinite;
+}
+.tiltle100 {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+    color: #00ffff;
+    text-shadow: 0px 0px 7px #00ffff;
+    text-decoration-color: linear-gradient(to top, #008aff,#00ffe7);
+    animation: animate 0.5s linear infinite;
+}
+
+/*#check{
+	display: none;
+}
+
+#icone{
+	cursor: pointer;
+	padding: 15px;
+	position: fixed;
+	height: 100%;
+	z-index: 2;
+	text-shadow: 0px 0px 7px #00ffff;
+    text-decoration-color: linear-gradient(to top, #008aff,#00ffe7);
+    animation: animate 0.5s linear infinite;
+}
+
+.barra{
+	height: 100%;
+	width: 300%;
+	position: absolute;
+	transition: all .2s linear; 
+}*/
+
+.eu {
+	border-radius: 50%;
+}
+
+/*@media (max-width: 1200px) {
+	nav ul li a {
+		font-size: 20px;
+		padding: 5% 10%;
+	}
+	section h1 h2 p {
+		max-width: 100%;
+		font-size: cover;
+	}
+	div {
+		vertical-align: center;
+	}
+	nav .logo img{
+	height: 75px;
+	transition: .5s;
+	cursor: pointer;
+	text-shadow: 0px 0px 7px #00ffff;
+    text-decoration-color: linear-gradient(to top, #008aff,#00ffe7);
+    animation: animate 35s linear infinite;
+}
+
+}*/
+
+@media (max-width: 1080px) {
+	nav ul li a {
+		font-size: 18px;
+		padding: 5px 10px;
+        
+	}
+	section h1 h2 p {
+		max-width: 100%;
+		font-size: cover;
+        text-align: center;
+	}
+	div {
+		vertical-align: center;
+	}
+	nav .logo img{
+	height: 75px;
+	transition: .5s;
+	cursor: pointer;
+	text-shadow: 0px 0px 7px #00ffff;
+    text-decoration-color: linear-gradient(to top, #008aff,#00ffe7);
+    animation: animate 35s linear infinite;
+}
+
+}*/
+
+@media (max-width: 992px) {
+	nav ul li a {
+        font-size: 15px;
+	}
+	h1 h2 p {
+		max-width: 100%;
+		font-size: 50px;
+	}
+	div {
+		vertical-align: center
+	}
+	logo img{
+	height: 30px;
+	transition: .5s;
+	cursor: pointer;
+	text-shadow: 0px 0px 7px #00ffff;
+    text-decoration-color: linear-gradient(to top, #008aff,#00ffe7);
+    animation: animate 35s linear infinite;
+}
+
+}
+
+@media (max-width: 768px) {
+	html body {
+		width: 100%;
+		background-size: cover;
+	}
+	nav ul li a {
+		font-size: 13px;
+	}
+	img.eu {
+		height: 100%;
+	}
+
+}
+
+@media (max-width: 600px) {
+	nav ul li a {
+		font-size: 11px;
+        
+	}
+	h1 h2 p {
+		text-align: center;
+	}
+	nav .logo img{
+	height: 15px;
+	transition: .5s;
+	cursor: pointer;
+	text-shadow: 0px 0px 7px #00ffff;
+    text-decoration-color: linear-gradient(to top, #008aff,#00ffe7);
+    animation: animate 35s linear infinite;
+}*/
+    
+@media (max-width: 300px) {
+	nav ul li a {
+		font-size: 13px;
+	}
+	h1 h2 p {
+		text-align: center;
+		font-size: 10px;
+	}
+}
+
+@media (max-width: 500px) {
+	nav ul li a {
+		font-size: 13px;
+	}
+	h1 h2 p {
+		text-align: center;
+	}
+}
+
+
+
+
+
+
+
+
+
